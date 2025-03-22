@@ -37,7 +37,7 @@ jobs:
       - name: Add KernelSU setup.sh
         run: |
           cd kernel-source
-          curl -LSs "https://raw.githubusercontent.com/rifsxd/KernelSU-Next/next/kernel/setup.sh" | bash -
+          curl -LSs "https://raw.githubusercontent.com/rifsxd/KernelSU-Next/next-susfs/kernel/setup.sh" | bash -s next-susfs
           
       - name: Setup submodules
         working-directory: kernel-source
